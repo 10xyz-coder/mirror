@@ -1,0 +1,138 @@
+html, body
+{
+  height: 100%;
+  margin: 0;
+}
+
+body
+{
+background-color: #2591d9;/*linear-gradient(to right top, #73c5fb, #2591d9, #1882c1, #0a73aa, #007fb9);*/
+}
+
+#header
+{
+	color: white;font-family: 'Yeon Sung';font-size: 45px;letter-spacing: 10px;margin-top: 80px;
+}
+.header img
+{
+	width: 80px;margin-left: -15px;
+}
+
+.login_div
+{
+	background: rgba(255,255,255,0.8);float: none;border-radius: 15px;
+}
+
+.logo
+{
+	width: 80px;margin-top: 30px;border-radius: 40px;
+}
+/*
+#login_button
+{
+	width: 80%;border-radius: 15px;
+}
+*/
+
+.room_name
+{
+	cursor: pointer;
+	font-size: 20px;
+}
+
+
+#logout
+{
+	font-size: 20px; float: right;
+}
+
+
+#output
+{
+	padding: 10px; width:80%;background: rgba(255,255,255,0.8);border-radius: 15px;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  margin: 0 auto;
+  position: fixed;
+  top: 600px;
+  overflow-y: auto;
+}
+
+.input_div_room_page
+{
+	width: 80%;
+}
+
+.input_div label
+{
+	color: white;font-size: 20px;
+}
+
+
+#input_div_message_page
+{
+	position: fixed;
+  left: 50%;
+  /*bottom: -100px;*/
+  top: 350px;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+	width: 100%;
+	background: rgba(255,255,255,0.8);
+}
+#input_div_message_page label
+{
+	color: black;
+}
+#input_div_message_page #msg
+{
+	width: 80%;
+}
+#input_div_message_page button
+{
+	margin-top: 15px;
+	width: 50%; 
+}
+.color_white
+{
+	color: white
+}
+
+.user_tick
+{
+	width:20px;
+}
+.message_h4
+{
+	padding-left:5px;color:grey;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;  
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+  background: #ffee06;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #ffee06;
+  cursor: pointer;
+}

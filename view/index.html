@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mirror Website</title>
+	<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert@2.1.2/dist/sweetalert.min.js"></script>
+	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
+	<script
+		src="https://code.jquery.com/jquery-3.1.1.min.js"
+		integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+		crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="../style.css">
+
+</head>
+<body onload="getData();">
+<div class="container">
+	<button id="logout" onclick="logout();" class="ui red button"> <i class="external alternate icon"></i> Logout</button>
+	<center>
+		<h1 class="ui header">	
+			Mirror
+		</h1>
+		<div id="info_pane">
+			<h1 id="website_name" class="ui blue massive button">Website Name</h1> <br>
+			<div class="ui massive label" id="desc" style="margin-left:-150px">
+				Description
+			</div> <br>
+		</div> <br>
+
+		<div id="input_div_message_page">
+			<label>Give your review:</label> 
+			<div style="width: 10%;"><input type="range" min="1" max="10" value="5" class="slider" id="myRange"> </div> <br>
+			<textarea id="msg" class="form-control" placeholder="Send your Feedback!" rows="4" maxlength="300" style="resize:none"></textarea><br>
+			<button onclick="send();" class="btn btn-success">Send</button>
+		</div>
+
+		<div id="output"></div>
+
+	
+	</center>
+</div>
+<script src="main.js"></script>
+</body>
+</html>

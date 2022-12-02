@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kwitter Room</title>
+	<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert@2.1.2/dist/sweetalert.min.js"></script>
+	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
+	<script
+		src="https://code.jquery.com/jquery-3.1.1.min.js"
+		integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+		crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.js"></script>>
+
+<link rel="stylesheet" type="text/css" href="../style.css">
+
+</head>
+<body onload="bodyOnLoad();">
+<div class="container">
+<button id="logout" onclick="logout();" class="ui red button"> <i class="external alternate icon"></i> Logout</button>
+	<center>
+		<h1 class="header">	
+			Mirror
+		</h1>
+		<h3 id="username" class="color_white"></h3>
+		<div class="form-group input_div_room_page">
+			<label>Enter Website URL</label>
+			<div class="ui labeled input">
+				<div class="ui label">
+					https://
+				</div>
+
+				<input type="text" id="room_name" placeholder="website.com" class="ui right labelled input">
+
+				<select class="ui dropdown" id="ext">
+					<option value="com">.com</option>
+					<option value="net">.net</option>
+					<option value="org">.org</option>
+				</select>
+
+					
+			</div>
+
+		</div>
+		<button onclick="room();" class="ui green button">Open Mirror</button>
+		
+	
+	</center>
+</div>
+<script src="../kwitter_room.js"></script>
+</body>
+</html>
