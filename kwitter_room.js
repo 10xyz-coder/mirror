@@ -38,7 +38,7 @@ function redirectToRoom(name)
 {
 	console.log(name)
 	localStorage.setItem('kwitter_room_name', name)
-	window.location.assign("/view/?id="+room_name+"&extension="+extension);
+	window.location.assign("/mirror/view/?id="+room_name+"&extension="+extension);
 }
 
 function logout()
