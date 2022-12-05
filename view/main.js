@@ -48,14 +48,14 @@ function getData() {
 			row = name_with_tag+message_with_tag+rating_button+span_tag;
       console.log(num)
 
-      var x = num
-      document.getElementById('output').style.top = x.toString() + "px"
+      //var x = num
+      //document.getElementById('output').style.top = x.toString() + "px"
 			document.getElementById('output').innerHTML += row;
       
 			//End code
   	};
 	})
-  document.getElementById('output').style.top = num.toString + 'px';
+  //document.getElementById('output').style.top = num.toString + 'px';
   console.log(document.getElementById('output').style.top)
 });
 }

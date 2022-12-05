@@ -49,13 +49,17 @@ background-color: #2591d9;/*linear-gradient(to right top, #73c5fb, #2591d9, #188
 
 #output
 {
-	padding: 10px; width:80%;background: rgba(255,255,255,0.8);border-radius: 15px;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  margin: 0 auto;
-  position: fixed;
-  top: 600px;
-  overflow-y: auto;
+	padding: 10px;
+	width:80%;
+	height:400px;
+	background: rgba(255,255,255,0.8);
+	border-radius: 15px;
+	transform: translate(-50%, -50%);
+	margin-top:-150px;
+	overflow-y: scroll;
+	left: 50%;
+	position: fixed;
+	overflow-y: auto;
 }
 
 .input_div_room_page
